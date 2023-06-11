@@ -17,7 +17,7 @@ export default function Home () {
                 <nav>
                     <ul id="primary-navigation" data-visible={navBar} className="primary-navigation underline-indicators flex">
                         <li className="active"><a className="ff-sans-cond uppercase text-white letter-spacing-2" href="/"><span>00</span>Home</a></li>
-                        <li><Link to="Destinations"><div className="ff-sans-cond uppercase text-white letter-spacing-2 " ><span className="newmenu">01</span>Destination</div></Link></li>
+                        <li><Link to="Destination"><div className="ff-sans-cond uppercase text-white letter-spacing-2 " ><span className="newmenu">01</span>Destinations</div></Link></li>
                         <li><Link to="Crew_Commander"><div className="ff-sans-cond uppercase text-white letter-spacing-2"><span className="newmenu">02</span>Crew</div></Link></li>
                         <li><Link to="Destination"><div className="ff-sans-cond uppercase text-white letter-spacing-2"><span className="newmenu">03</span>Technology</div></Link></li>
                     </ul>
