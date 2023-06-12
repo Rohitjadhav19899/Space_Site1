@@ -11,7 +11,7 @@ export default function Home () {
         <div className="home">
             <header className="primary-header flex">
                 <div>
-                    <img src="./src/assets/shared/react.svg" alt="space logo" className="logo"/>
+                    <img src="src/assets/shared/logo.svg" alt="space logo" className="logo"/>
                 </div>
                 <button className="mobile-nav-toggle" onClick={() => setNavBar((prev) => !prev)}aria-controls="primary-navigation"><span className="sr-only" aria-expanded={navBar}></span></button>
                 <nav>
