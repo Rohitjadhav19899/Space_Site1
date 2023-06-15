@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "/src/assets/shared/logo.svg";
-import Moon from "/src/assets/destination/image-moon.png";
 import Mars from "/src/assets/destination/image-mars.png"; 
 import Europa from "/src/assets/destination/image-europa.png";
 import Titan from "/src/assets/destination/image-titan.png" ;
@@ -44,7 +43,7 @@ export default function Destination() {
                     <button aria-selected="true" className="uppercase ff-sans-cond text-light bg-dark letter-spacing-2">Moon</button>
                     <button aria-selected="false" className="uppercase ff-sans-cond text-light bg-dark letter-spacing-2">Mars</button>
                     <button aria-selected="false" className="uppercase ff-sans-cond text-light bg-dark letter-spacing-2">Europa</button>
-                    <button aria-selected="flase" className="uppercase ff-sans-cond text-light bg-dark letter-spacing-2">Titan</button>
+                    <button aria-selected="true" className="uppercase ff-sans-cond text-light bg-dark letter-spacing-2">Titan</button>
 
                 </div>
 
