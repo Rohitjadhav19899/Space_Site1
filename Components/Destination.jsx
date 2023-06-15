@@ -2,6 +2,12 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import logo from "/src/assets/shared/logo.svg";
+import Moon from "/src/assets/destination/image-moon.png";
+import Mars from "/src/assets/destination/image-mars.png"; 
+import Europa from "/src/assets/destination/image-europa.png";
+import Titan from "/src/assets/destination/image-titan.png" ;
+
 export default function Destination() {
 
     const [navBar, setNavBar] = useState(false);
@@ -13,7 +19,7 @@ export default function Destination() {
         <div className="destination">
             <header className="primary-header flex">
                 <div>
-                    <img src="./src/assets/shared/logo.svg" alt="space logo" className="logo" />
+                    <img src={logo} alt="space logo" className="logo" />
                 </div>
                 <button className="mobile-nav-toggle" onClick={() => setNavBar((prev) => !prev)} aria-controls="primary-navigation"><span className="sr-only" aria-expanded={navBar}></span></button>
                 <nav>
@@ -29,10 +35,10 @@ export default function Destination() {
             <main id="main" className="grid-container grid-container--destination flow">
                 <h1 className="numbered-title"><span className="newmenu" aria-hidden="true">01</span> Pick your destination</h1>
                 /*-------------EDIT--------------*/
-                <img className={hide} src="./src/assets/destination/image-moon.png" alt="The Moon"></img>
-                <img className={hide} src="./src/assets/destination/image-mars.png" alt="The Mars"></img>
-                <img className={hide} src="./src/assets/destination/image-europa.png" alt="The Europa"></img>
-                <img className={hide} src="./src/assets/destination/image-titan.png" alt="The Titan"></img>
+                <img className={hide} src= {Moon} alt="The Moon"></img>
+                <img className={hide} src= {Mars} alt="The Mars"></img>
+                <img className={hide} src= {Europa} alt="The Europa"></img>
+                <img className={hide} src= {Titan} alt="The Titan"></img>
                 /*-------------EDIT--------------*/
                 <div className="tab-list underline-indicators flex">
                     <button aria-selected="true" className="uppercase ff-sans-cond text-light bg-dark letter-spacing-2">Moon</button>

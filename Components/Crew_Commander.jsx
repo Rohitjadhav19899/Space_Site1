@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import logo from "/src/assets/shared/logo.svg";
+
 export default function Crew_Commander () {
 
     const [navBar, setNavBar] = useState(false);
@@ -11,7 +13,7 @@ export default function Crew_Commander () {
         <div className="Crew_Commander">
             <header className="primary-header flex">
                 <div>
-                    <img src="./src/assets/shared/logo.svg" alt="space logo" className="logo"/>
+                    <img src={logo} alt="space logo" className="logo"/>
                 </div>
                 <button className="mobile-nav-toggle" onClick={() => setNavBar((prev) => !prev)}aria-controls="primary-navigation"><span className="sr-only" aria-expanded={navBar}></span></button>
                 <nav>
