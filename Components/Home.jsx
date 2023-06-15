@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import logo from "./src/assets/shared/logo.png";
+import logo from "/src/assets/shared/logo.png";
 
 export default function Home () {
 
