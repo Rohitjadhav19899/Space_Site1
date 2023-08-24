@@ -11,9 +11,8 @@ import Titan from "/src/assets/destination/image-titan.png" ;
 export default function Destination() {
 
     const [navBar, setNavBar] = useState(false);
-    /*-------------EDIT--------------*/
-    const [hide, sethide] = useState(true);
-    /*-------------EDIT--------------*/
+    
+    const [selectDestination, setselectDestination] = useState("moon")
 
     return (
         <div className="destination">
